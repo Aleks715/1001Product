@@ -76,3 +76,43 @@ viewer.onclick = (e) => {
         viewer.style.display = "none";
     }
 };
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById('product-select');
+    const quantityInput = document.getElementById('quantity');
+    const priceDisplay = document.getElementById('price-display');
+    const form = document.querySelector("form");
+
+    function updatePrice() {
+        // ფასის ამოღება select-ის value-დან (მაგ: "20 ₾" -> 20)
+        const unitPriceText = select.value.split("—")[1];
+        const unitPrice = parseInt(unitPriceText.replace("₾", "").trim());
+        const quantity = parseInt(quantityInput.value) || 1;
+        
+        // ფასის გადაანგარიშება
+        priceDisplay.innerText = "ფასი: " + (unitPrice * quantity) + " ₾";
+    }
+
+    if (select) select.addEventListener('change', updatePrice);
+    if (quantityInput) quantityInput.addEventListener('input', updatePrice);
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(() => {
+            form.innerHTML = `
+                <div class="success-message" style="padding: 20px; text-align: center;">
+                    <h2>მადლობა შეკვეთისთვის ❤️</h2>
+                    <p>ჩვენ მალე დაგიკავშირდებით.</p>
+                </div>
+            `;
+        })
+        .catch(() => alert("დაფიქსირდა შეცდომა, სცადეთ თავიდან"));
+    });
+});
