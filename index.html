@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1001 პროდუქტი</title>
+    <!-- ლოგო ჩანართში -->
+    <link rel="icon" type="image/jpeg" href="VIDEO DA FOTOEBI/e4124bd1-51dd-47a6-942a-f60acc400756.jpg">
+    <link rel="stylesheet" href="./styl.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="logo-container">
+        <img src="VIDEO DA FOTOEBI/e4124bd1-51dd-47a6-942a-f60acc400756.jpg" alt="Logo" class="logo">
+    </div>
+
+    <h1>1001 პროდუქტი</h1>
+
+    <div class="description">
+        <p>ამას ელექტრიკები გიმალავენ! ‼️😮
+220 ვოლტიანი უსადენო დისტანციური ჩამრთველი 
+მართე წყლის ტუმბო, ძრავი და სხვა ელექტრო მოწყობილობები მარტივად, დისტანციიდან.
+✅ სამუშაო მანძილი 100 მეტრი
+✅ მარტივი მონტაჟი
+✅ კომფორტული და საიმედო გამოყენება
+✅ თავსებადია თითქმის ნებისმიერ 220V მოწყობილობასთან</p>
+    </div>
+
+    <div class="gallery">
+        <img src="VIDEO DA FOTOEBI/WhatsApp Image 2026-06-24 at 11.08.00 (2).jpeg" alt="ფოტო">
+        <img src="VIDEO DA FOTOEBI/WhatsApp Image 2026-06-24 at 11.08.01 (2).jpeg" alt="ფოტო">    
+        <img src="VIDEO DA FOTOEBI/WhatsApp Image 2026-06-24 at 11.08.00.jpeg" alt="ფოტო">
+        <img src="VIDEO DA FOTOEBI/WhatsApp Image 2026-06-24 at 11.08.01.jpeg" alt="ფოტო">
+        <img src="VIDEO DA FOTOEBI/WhatsApp Image 2026-06-24 at 11.14.38.jpeg" alt="ფოტო">
+    </div>
+<div id="image-viewer">
+    <span id="close">×</span>
+    <img id="big-image">
+</div>
+
+
+
+    <div class="media-box">
+        <h3>პროდუქტის ვიდეო</h3>
+        <video controls>
+            <source src="VIDEO DA FOTOEBI/WhatsApp Video 2026-06-23 at 22.01.33.mp4  " type="video/mp4">
+        </video>
+    </div>
+
+
+<div class="order-section">
+        <h3>შეკვეთის გაფორმება</h3>
+        <form id="my-form" action="https://formspree.io/f/xrewepzk" method="POST">
+            
+            <select id="product-select" name="product">
+                <option value="220 W ათი — 20 ₾">220 ვოლტიანი — 20 ₾</option>
+                <option value="12 ვოლტიანი — 25 ₾">12 ვოლტიანი — 25 ₾</option>
+            </select>
+
+            <h3 id="price-display">ფასი: 20 ₾</h3>
+
+            <div class="input-container">
+                <input type="text" name="name" placeholder="სახელი და გვარი" required>
+                <input type="tel" name="phone" placeholder="ტელეფონის ნომერი" required>
+                <input type="text" name="address" placeholder="მისამართი" required>
+                
+                <button type="submit" id="my-form-button">შეკვეთის გაგზავნა</button>
+            </div>
+        </form>
+
+        <div class="delivery-info" style="margin-top: 20px; text-align: left; font-size: 14px; color: #444; background: #f4f4f4; padding: 10px; border-radius: 10px;">
+            <p><strong>მიწოდების პირობები:</strong></p>
+            <p>• თბილისში მიწოდება: 6 ლარი</p>
+            <p>• რეგიონებში მიწოდება: 12 ლარი</p>
+            <p><em>*მიწოდება ხდება 2-4 სამუშაო დღეში.</em></p>
+
+
+
+            <!-- საკონტაქტო ინფორმაცია -->
+<div class="contact-info" style="margin-top: 20px; text-align: center; font-size: 14px; color: #444; padding: 10px;">
+    <p><strong>კითხვების შემთხვევაში დაგვიკავშირდით:</strong></p>
+    <p>📞 ტელეფონი: <a href="tel:+995598123954" style="color: #27ae60; text-decoration: none; font-weight: bold;">598 12 39 54</a></p>
+    <p>🌐 <a href="https://www.facebook.com/share/r/1EAU1ZY6UN/?mibextid=wwXIfr" target="_blank" style="color: #3b5998; text-decoration: none; font-weight: bold;">ეწვიეთ ჩვენს Facebook გვერდს</a></p>
+</div>
+        </div>
+
+        <p id="my-form-status" style="margin-top: 15px; font-weight: bold; color: green; text-align: center;"></p>
+    </div>
+
+    <p id="my-form-status" style="margin-top: 15px; font-weight: bold; color: green; text-align: center;"></p>
+</div>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
