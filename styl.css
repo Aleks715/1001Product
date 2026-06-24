@@ -1,0 +1,143 @@
+body { font-family: 'Segoe UI', sans-serif; background-color: #f9f9fb; padding: 20px; }
+.main-container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
+
+.logo-container { text-align: right; margin-bottom: 20px; }
+.logo { width: 90px; }
+
+.description { color: #666; margin-bottom: 25px; line-height: 1.5; }
+
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 25px; }
+.gallery img { width: 100%; height: 150px; object-fit: cover; border-radius: 12px; }
+
+.media-box video { width: 100%; border-radius: 12px; margin-bottom: 25px; }
+
+.order-section { border-top: 1px solid #eee; padding-top: 25px; }
+
+#product-select { width: 100%; padding: 12px; border-radius: 12px; border: 1px solid #ddd; margin-bottom: 15px; font-size: 16px; cursor: pointer; }
+
+#price-display { color: #2c3e50; font-size: 24px; margin: 0 0 20px 0; }
+
+.input-container { display: flex; flex-direction: column; gap: 10px; }
+
+input[type="tel"] { padding: 14px; border-radius: 12px; border: 1px solid #ddd; font-size: 16px; width: 100%; box-sizing: border-box; }
+
+button { padding: 14px; background-color: #27ae60; color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+button:hover { background-color: #219150; }
+
+
+
+
+
+
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background-color: #f4f4f9; padding: 10px; }
+.main-container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+.logo-container { text-align: right; }
+.logo { width: 80px; }
+
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+.gallery img { width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px; }
+
+.media-box video { width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
+
+#product-select { width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ccc; font-size: 16px; margin-bottom: 10px; cursor: pointer; }
+#price-display { margin: 15px 0; color: #333; }
+
+input[type="tel"] { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 10px; font-size: 16px; margin-bottom: 10px; }
+button { width: 100%; padding: 12px; background: #002d72; color: white; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; }
+
+@media (max-width: 480px) { .main-container { padding: 15px; } }
+
+
+#image-viewer {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+#image-viewer img {
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
+
+#close {
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+/* შეკვეთის სექციის კონტეინერი */
+.order-section {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* ყველა input-ისა და select-ის საერთო სტილი */
+.order-section input[type="text"],
+.order-section input[type="tel"],
+.order-section select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px; /* მომრგვალებული კუთხეები */
+    font-size: 16px;
+    box-sizing: border-box; /* რომ კიდეები არ გასცდეს კონტეინერს */
+    transition: border-color 0.3s;
+}
+
+/* როცა ველს დააწკაპუნებ, ფერი შეიცვლება */
+.order-section input:focus,
+.order-section select:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
+/* ფასის სტილი */
+#price-display {
+    margin: 10px 0 20px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* ღილაკის სტილი */
+#my-form-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 15px; /* მომრგვალებული ღილაკი */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#my-form-button:hover {
+    background-color: #219150;
+}
+
+/* მიწოდების პირობების ბლოკი */
+.delivery-info {
+    border-radius: 15px !important;
+    padding: 15px !important;
+    background: #f8f9fa !important;
+    border: 1px solid #eee;
+}
