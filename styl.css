@@ -79,7 +79,7 @@ button { width: 100%; padding: 12px; background: #002d72; color: white; border: 
     cursor:pointer;
 }
 
-/* შეკვეთის სექციის კონტეინერი */
+
 .order-section {
     padding: 20px;
     background: #ffffff;
@@ -88,7 +88,7 @@ button { width: 100%; padding: 12px; background: #002d72; color: white; border: 
     margin-top: 20px;
 }
 
-/* ყველა input-ისა და select-ის საერთო სტილი */
+
 .order-section input[type="text"],
 .order-section input[type="tel"],
 .order-section select {
@@ -96,34 +96,34 @@ button { width: 100%; padding: 12px; background: #002d72; color: white; border: 
     padding: 15px;
     margin-bottom: 15px;
     border: 1px solid #e0e0e0;
-    border-radius: 15px; /* მომრგვალებული კუთხეები */
+    border-radius: 15px; 
     font-size: 16px;
-    box-sizing: border-box; /* რომ კიდეები არ გასცდეს კონტეინერს */
+    box-sizing: border-box; 
     transition: border-color 0.3s;
 }
 
-/* როცა ველს დააწკაპუნებ, ფერი შეიცვლება */
+
 .order-section input:focus,
 .order-section select:focus {
     border-color: #27ae60;
     outline: none;
 }
 
-/* ფასის სტილი */
+
 #price-display {
     margin: 10px 0 20px 0;
     color: #333;
     font-size: 18px;
 }
 
-/* ღილაკის სტილი */
+
 #my-form-button {
     width: 100%;
     padding: 15px;
     background-color: #27ae60;
     color: white;
     border: none;
-    border-radius: 15px; /* მომრგვალებული ღილაკი */
+    border-radius: 15px; 
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -134,10 +134,34 @@ button { width: 100%; padding: 12px; background: #002d72; color: white; border: 
     background-color: #219150;
 }
 
-/* მიწოდების პირობების ბლოკი */
+
 .delivery-info {
     border-radius: 15px !important;
     padding: 15px !important;
     background: #f8f9fa !important;
     border: 1px solid #eee;
+}
+
+
+
+
+
+
+.order-section input[type="text"],
+.order-section input[type="tel"],
+.order-section input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px; 
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+
+.order-section input:focus {
+    border-color: #27ae60;
+    outline: none;
 }
